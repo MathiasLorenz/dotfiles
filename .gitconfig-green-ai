@@ -1,0 +1,5 @@
+[user]
+  name = Mathias Lorenz
+  email = mathiaslorenz@green.ai
+[pull]
+  rebase = true
