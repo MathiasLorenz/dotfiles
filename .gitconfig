@@ -1,5 +1,7 @@
 [init]
-	defaultBranch = main
+  defaultBranch = main
+[pull]
+  rebase = true
 
 [includeIf "gitdir:~/Repos/personal/"]
   path = ~/.gitconfig-personal
