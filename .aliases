@@ -1,0 +1,9 @@
+# go-task
+alias t="task"
+
+# some python dev aliases
+alias rl="run_linters"
+alias pt="pytest"
+alias rlt="figlet 'run_linters' ; run_linters ; figlet 'pytest' ; pytest"
+alias ruff_fix="ruff check . --config linting/.ruff.toml --fix"
+alias b="black ."
