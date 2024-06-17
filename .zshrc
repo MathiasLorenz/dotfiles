@@ -1,3 +1,9 @@
+# You may need to manually set your language environment
+export LANG=en_US.UTF-8
+
+# Fix tty for gpg signing
+export GPG_TTY=$(tty)
+
 # init zplug
 if [[ "$(uname)" == "Darwin" ]]; then
     export ZPLUG_HOME=/opt/homebrew/opt/zplug
@@ -47,16 +53,10 @@ zplug load
 # located in ~/.config/starship.toml
 eval "$(starship init zsh)"
 
-# You may need to manually set your language environment
-export LANG=en_US.UTF-8
-
 # Poetry
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
-
-# Fix tty for gpg signing
-export GPG_TTY=$(tty)
 
 # source custom commands
 source ~/.aliases
