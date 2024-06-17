@@ -1,5 +1,9 @@
 # init zplug
-export ZPLUG_HOME=/home/lorenz/zplug
+if [[ "$(uname)" == "Darwin" ]]; then
+    export ZPLUG_HOME=/opt/homebrew/opt/zplug
+else
+    export ZPLUG_HOME=/home/lorenz/zplug
+fi
 source $ZPLUG_HOME/init.zsh
 
 # load oh-my-zsh lib components
@@ -47,10 +51,6 @@ eval "$(starship init zsh)"
 export LANG=en_US.UTF-8
 
 # Poetry
-# export PATH="$HOME/.local/bin:$PATH"
-# export PYENV_ROOT="$HOME/.pyenv"
-# command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-# eval "$(pyenv init -)"
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
@@ -61,18 +61,44 @@ export GPG_TTY=$(tty)
 # source custom commands
 source ~/.aliases
 
-# Add python poetry to PATH
-export PATH="$PATH:/home/lorenz/.local/share/pypoetry/venv/bin"
-
-# Add tofuenv to PATH
-export PATH="$PATH:/home/lorenz/.tofuenv/bin"
-
-# Add .local/bin to PATH, here is e.g. go-task installed
-export PATH="$PATH:/home/lorenz/.local/bin"
-
 # Rust/Cargo setup
 . "$HOME/.cargo/env"
 
-# Homebrew (package manager)
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+if [[ "$(uname)" == "Darwin" ]]; then
+
+    # Docker (colima)
+    export DOCKER_HOST=unix://$HOME/.colima/docker.sock
+
+    # some stupid package needed in draw-map-service, installed via brew
+    export GEOS_DIR="/opt/homebrew/Cellar/geos/3.12.0"
+
+    # roc
+    export PATH=$PATH:~/roc/roc_nightly-macos_apple_silicon-2023-12-01-a56d7adc17
+
+    # nvm (node manager)
+    export NVM_DIR="$HOME/.nvm"
+    [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+    [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+    # Alias for awsp, https://github.com/johnnyopao/awsp
+    alias awsp="source _awsp"
+    export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+
+else
+
+    # Add python poetry to PATH
+    export PATH="$PATH:/home/lorenz/.local/share/pypoetry/venv/bin"
+
+    # Add tofuenv to PATH
+    export PATH="$PATH:/home/lorenz/.tofuenv/bin"
+
+    # Add .local/bin to PATH, here is e.g. go-task installed
+    export PATH="$PATH:/home/lorenz/.local/bin"
+
+    # Homebrew (package manager)
+    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+fi
+
+
 
