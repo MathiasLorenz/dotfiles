@@ -62,6 +62,9 @@ source ~/.aliases
 # Rust/Cargo setup
 . "$HOME/.cargo/env"
 
+# zoxide
+eval "$(zoxide init zsh)"
+
 if [[ "$(uname)" == "Darwin" ]]; then
 
     # Docker (colima)
