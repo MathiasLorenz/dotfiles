@@ -51,19 +51,11 @@ zplug load
 # located in ~/.config/starship.toml
 eval "$(starship init zsh)"
 
-# Poetry
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-
 # source custom commands
 source ~/.aliases
 
 # Rust/Cargo setup
 . "$HOME/.cargo/env"
-
-# zoxide
-eval "$(zoxide init zsh)"
 
 if [[ "$(uname)" == "Darwin" ]]; then
 
@@ -108,3 +100,11 @@ else
     . /home/linuxbrew/.linuxbrew/opt/asdf/libexec/asdf.sh
 
 fi
+
+# Poetry
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+# zoxide
+eval "$(zoxide init zsh)"
