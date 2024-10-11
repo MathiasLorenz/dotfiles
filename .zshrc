@@ -99,6 +99,8 @@ else
     # asdf 'package manager' setup
     . /home/linuxbrew/.linuxbrew/opt/asdf/libexec/asdf.sh
 
+    export PATH="$PATH:/opt/nvim-linux64/bin"
+
 fi
 
 # Poetry
