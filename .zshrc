@@ -8,7 +8,7 @@ export GPG_TTY=$(tty)
 if [[ "$(uname)" == "Darwin" ]]; then
     export ZPLUG_HOME=/opt/homebrew/opt/zplug
 else
-    export ZPLUG_HOME=/home/lorenz/zplug
+    export ZPLUG_HOME=/home/mlorenz/.zplug
 fi
 source $ZPLUG_HOME/init.zsh
 
@@ -83,23 +83,24 @@ else
     export PATH="$PATH:/home/lorenz/.local/share/pypoetry/venv/bin"
 
     # Add tofuenv to PATH
-    export PATH="$PATH:/home/lorenz/.tofuenv/bin"
+    # tofuenv should be deprecated for tenv
+    # export PATH="$PATH:/home/lorenz/.tofuenv/bin"
 
     # Add .local/bin to PATH, here is e.g. go-task installed
-    export PATH="$PATH:/home/lorenz/.local/bin"
+    # export PATH="$PATH:/home/lorenz/.local/bin"
 
     # Homebrew (package manager)
-    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+    # eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
     # nvm (node manager)
-    export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-    [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+    # export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+    # [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
     # asdf 'package manager' setup
-    . /home/linuxbrew/.linuxbrew/opt/asdf/libexec/asdf.sh
+    # . /home/linuxbrew/.linuxbrew/opt/asdf/libexec/asdf.sh
 
-    export PATH="$PATH:/opt/nvim-linux64/bin"
+    # export PATH="$PATH:/opt/nvim-linux64/bin"
 
 fi
 
