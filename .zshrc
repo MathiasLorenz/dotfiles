@@ -77,6 +77,16 @@ if [[ "$(uname)" == "Darwin" ]]; then
     alias awsp="source _awsp"
     export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 
+    # asdf setup
+    . /opt/homebrew/opt/asdf/libexec/asdf.sh
+
+    . "$HOME/.local/bin/env"
+    
+    # Poetry
+    export PYENV_ROOT="$HOME/.pyenv"
+    [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+    eval "$(pyenv init -)"
+
 else
 
     # Add python poetry to PATH
@@ -103,11 +113,6 @@ else
     # export PATH="$PATH:/opt/nvim-linux64/bin"
 
 fi
-
-# Poetry
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
 
 # zoxide
 eval "$(zoxide init zsh)"
