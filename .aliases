@@ -1,3 +1,6 @@
+# Extra git aliases (many are set from git oh-my-zsh plugin)
+alias gpfwl="git push --force-with-lease"
+
 # go-task
 alias t="task"
 
