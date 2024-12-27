@@ -13,7 +13,7 @@ disabled = true
 
 [kubernetes]
 format = 'on [☸ $context \($namespace\)](blue) '
-disabled = false
+disabled = true
 
 [[kubernetes.contexts]]
 context_pattern = "arn:aws:eks:[\\w-]+:[\\d]+:cluster/(?P<cluster>[\\w-]+)"
