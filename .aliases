@@ -2,7 +2,7 @@
 alias gpfwl="git push --force-with-lease"
 
 # go-task
-alias t="task"
+alias t="go-task"
 
 # some python dev aliases
 alias rl="run_linters"
