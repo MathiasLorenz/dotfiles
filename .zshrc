@@ -116,3 +116,6 @@ fi
 
 # zoxide
 eval "$(zoxide init zsh)"
+
+# init nvm (node version manager)
+source /usr/share/nvm/init-nvm.sh
