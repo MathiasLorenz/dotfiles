@@ -9,12 +9,10 @@
     "sway/workspaces",
     "sway/mode"
   ],
-  "modules-center": [sway/window],
+  "modules-center": ["sway/window"],
   "modules-right": [
     "clock",
-    "pulseaudio",
     "network",
-    "backlight",
     "battery#bat0",
     "battery#bat1",
     "idle_inhibitor",
@@ -22,7 +20,7 @@
     "tray"
   ],
   "custom/kernel": {
-    "exec": "/home/zander/dotfiles/scripts/print_osicon_kernel.sh"
+    "exec": "/home/mlorenz/dotfiles/.config/scripts/print_osicon_kernel.sh"
   },
   "idle_inhibitor": {
     "format": "{icon}",
