@@ -26,14 +26,23 @@ set $menu rofi -show drun -c ~/.config/rofi/config.rasi
 # When options have been created
 # set $menu wofi --show drun ~/.config/wofi/config
 
-### font
+### Font
 # This doesn't seem to work apply, though it is clearly read correctly ..
 font pango:Hack Nerd Font 13
 
-### keyboard https://github.com/swaywm/sway/wiki#input-configuration
+### Input configruation
+#
+# https://github.com/swaywm/sway/wiki#input-configuration
+#
+### Keyboard
 input "type:keyboard" {
     repeat_delay 300
     repeat_rate 35
+}
+#
+### Mouse
+input "type:mouse" {
+    accel_profile "flat" # disables mouse acceleration
 }
 
 ### Output configuration
@@ -42,6 +51,7 @@ input "type:keyboard" {
 # output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_3840x2160.png fill
 #
 # This works for my workstation at home, will probably have to fix this when using a laptop as well..
+# scale is supported but is discouraged, see https://github.com/swaywm/sway/wiki#hidpi and fractional scaling
 output DP-2 {
     mode 3840x2160@143.998Hz
     scale 1.25
@@ -247,5 +257,8 @@ bar {
      swaybar_command waybar
 }
 # I killed the default config for sway-bar, maybe I'll rip myself here
+
+### Notification manager
+exec mako
 
 include /etc/sway/config.d/*
