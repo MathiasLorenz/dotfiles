@@ -16,7 +16,7 @@ set $right l
 # Your preferred terminal emulator
 set $term ghostty
 
-# Your preferred application launcher
+### Your preferred application launcher
 # tofi
 # set $menu tofi-run | xargs swaymsg exec --
 # rofi
@@ -26,9 +26,15 @@ set $menu rofi -show drun -c ~/.config/rofi/config.rasi
 # When options have been created
 # set $menu wofi --show drun ~/.config/wofi/config
 
-# font
+### font
 # This doesn't seem to work apply, though it is clearly read correctly ..
 font pango:Hack Nerd Font 13
+
+### keyboard https://github.com/swaywm/sway/wiki#input-configuration
+input "type:keyboard" {
+    repeat_delay 300
+    repeat_rate 35
+}
 
 ### Output configuration
 #
