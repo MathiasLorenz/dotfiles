@@ -27,7 +27,8 @@ set $menu rofi -show drun -c ~/.config/rofi/config.rasi
 # set $menu wofi --show drun ~/.config/wofi/config
 
 # font
-# font Hack Nerd Font 13
+# This doesn't seem to work apply, though it is clearly read correctly ..
+font pango:Hack Nerd Font 13
 
 ### Output configuration
 #
@@ -224,7 +225,17 @@ bindsym $mod+r mode "resize"
     # Special key to take a screenshot with grim
     bindsym Print exec grim
 
-#
+# window borders
+default_border pixel 2
+default_floating_border normal
+
+# gaps between windows
+gaps inner 5
+gaps outer 5
+
+smart_gaps on
+smart_borders on
+
 # Status Bar:
 bar { 
      swaybar_command waybar
