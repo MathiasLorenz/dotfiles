@@ -10,3 +10,6 @@ alias pt="pytest"
 alias rlt="figlet 'run_linters' ; run_linters ; figlet 'pytest' ; pytest"
 alias ruff_fix="ruff check . --config linting/.ruff.toml --fix"
 alias b="black ."
+
+# fastfetch
+alias ff=fastfetch
