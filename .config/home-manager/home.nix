@@ -19,7 +19,31 @@
   # environment.
   home.packages = with pkgs; [
     btop
+    zathura
+    zoxide
+    fish
+    wl-clipboard
+    wget
+    bitwarden-desktop
+    bat
+    nix-zsh-completions
+    curl
+    fastfetch
+    fd
+    # ghostty
+
+    # This does not work currently :(
+    # containerd
+    # docker
+    # docker-buildx
+    # dive
+
     gh
+    hub
+    lazygit
+
+    wlr-randr
+    rofi
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
