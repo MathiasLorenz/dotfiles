@@ -1,2 +1,5 @@
 # This gh config contains a oauth token
 .config/gh/hosts.yml
+
+# result package from home-manager
+/result
