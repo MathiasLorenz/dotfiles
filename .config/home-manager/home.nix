@@ -32,18 +32,31 @@
     curl
     fastfetch
     fd
-    # ghostty
     ncdu
     neovim
 
-    waybar
-    mako
-    
     # This does not work currently :(
     # containerd
     # docker
     # docker-buildx
     # dive
+    
+    # Currently I can't get sway to work with home-manager
+    # The problem is that wlroots can't launch as it is looking for 
+    # EGL extensions (OpenGL)
+    # Should be fixable... For now sway can be installed with pacman/paru
+    # nixGL https://github.com/nix-community/nixGL should definitly be able to solve the issue
+    # but I cannot get it to work....
+    # This should be the same for all gpu powered programs (like ghostty I suppose)
+    # sway
+    # ghostty
+
+    # The sway 'downstream' dependencies can still be installed with home-manager
+    swaybg
+    swayidle
+    swaylock
+    waybar
+    mako
 
     gh
     hub
