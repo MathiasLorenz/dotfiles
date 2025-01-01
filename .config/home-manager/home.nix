@@ -40,6 +40,7 @@
     fzf
     ripgrep
     go-task
+    starship
 
     gcc
     lua
