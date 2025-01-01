@@ -13,3 +13,6 @@ alias b="black ."
 
 # fastfetch
 alias ff=fastfetch
+
+# home-manager
+alias hm=home-manager
