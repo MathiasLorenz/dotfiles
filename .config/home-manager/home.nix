@@ -33,14 +33,29 @@
     fastfetch
     fd
     ncdu
+    vim
     neovim
+    wl-clipboard
+    fish
+    fzf
+    ripgrep
+    go-task
+
+    gcc
+    lua
+    luarocks
+    uv
+    rustup
+ 
+    git # pacman still has git installed for pacman itself I am quite sure
+    paru
 
     # This does not work currently :(
     # containerd
     # docker
     # docker-buildx
     # dive
-    
+
     # Currently I can't get sway to work with home-manager
     # The problem is that wlroots can't launch as it is looking for 
     # EGL extensions (OpenGL)
