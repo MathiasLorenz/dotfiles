@@ -33,8 +33,12 @@
     fastfetch
     fd
     # ghostty
-    waybar
+    ncdu
+    neovim
 
+    waybar
+    mako
+    
     # This does not work currently :(
     # containerd
     # docker
