@@ -46,11 +46,6 @@ fi
 # zplug load --verbose
 zplug load
 
-# use starship prompt, must be installed seperately
-# starship is configured in a seperate configuration file
-# located in ~/.config/starship.toml
-eval "$(starship init zsh)"
-
 # source custom commands
 source ~/.env
 source ~/.aliases
