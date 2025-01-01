@@ -41,6 +41,8 @@
     ripgrep
     go-task
     starship
+    gawk
+    # zplug # This needs some more setup, probably easiest for now to download manually
 
     gcc
     lua
