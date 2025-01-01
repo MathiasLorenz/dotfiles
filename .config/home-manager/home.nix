@@ -33,6 +33,7 @@
     fastfetch
     fd
     # ghostty
+    waybar
 
     # This does not work currently :(
     # containerd
