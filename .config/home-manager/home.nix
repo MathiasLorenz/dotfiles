@@ -36,7 +36,6 @@
     vim
     neovim
     wl-clipboard
-    fish
     fzf
     ripgrep
     go-task
