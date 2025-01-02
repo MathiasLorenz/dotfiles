@@ -55,10 +55,17 @@ input "1189:32774:BenQ_ZOWIE_BenQ_ZOWIE_Gaming_Mouse" {
 #
 # This works for my workstation at home, will probably have to fix this when using a laptop as well..
 # scale is supported but is discouraged, see https://github.com/swaywm/sway/wiki#hidpi and fractional scaling
+# workstation screen
 output DP-2 {
     mode 3840x2160@143.998Hz
     scale 1.25
   }
+
+# frame.work laptop screen
+output eDP-1 {
+  mode 2880x1920@120Hz
+  scale 1.5
+}
 
 # You can get the names of your outputs by running: swaymsg -t get_outputs
 
