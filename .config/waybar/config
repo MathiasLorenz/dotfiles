@@ -13,6 +13,7 @@
   "modules-right": [
     "cpu",
     "memory",
+    "pulseaudio",
     "clock",
     "network",
     "battery#bat0",

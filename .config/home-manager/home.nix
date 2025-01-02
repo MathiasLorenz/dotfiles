@@ -48,6 +48,7 @@
     unzip
     nodejs_23
     magic-wormhole
+    pavucontrol # pulse audio volume control
 
     slack
     _1password-gui
