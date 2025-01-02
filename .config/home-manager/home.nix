@@ -49,6 +49,7 @@
     nodejs_23
 
     slack
+    _1password-gui
 
     gcc
     lua
@@ -121,6 +122,7 @@
   nixpkgs.config.allowUnfreePredicate = pkg:
     builtins.elem (pkgs.lib.getName pkg) [
       "slack"
+      "1password"
     ];
   # Home Manager can also manage your environment variables through
   # 'home.sessionVariables'. These will be explicitly sourced when using a
