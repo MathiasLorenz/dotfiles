@@ -42,6 +42,9 @@
     starship
     gawk
     # zplug # This needs some more setup, probably easiest for now to download manually
+    tldr
+    stow
+    kdePackages.plasma-wayland-protocols # needed to launch KDE plasma with Wayland
 
     gcc
     lua
