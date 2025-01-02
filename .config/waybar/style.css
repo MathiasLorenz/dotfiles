@@ -116,6 +116,14 @@ button:hover {
   margin-right: 0;
 }
 
+#cpu {
+  color: #7dbeff;
+}
+
+#memory {
+  color: #7dbeff;
+}
+
 #clock {
   color: #7dbeff;
 }
