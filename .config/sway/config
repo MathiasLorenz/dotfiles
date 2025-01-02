@@ -121,6 +121,9 @@ output eDP-1 {
 
     # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+
+    # Lock the screen with swaylock
+    bindsym $mod+Shift+Control+l exec swaylock -c 000000
 #
 # Moving around:
 #
