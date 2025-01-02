@@ -1,6 +1,6 @@
 # https://nix-community.github.io/home-manager/
 
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   # Home Manager needs a bit of information about you and the paths it should
@@ -80,7 +80,7 @@
     # The sway 'downstream' dependencies can still be installed with home-manager
     swaybg
     swayidle
-    # swaylock # Even when using the correct password I can't unluck with this - it works if installed with pacman...
+    # swaylock # Even when using the correct password I can't unluck with this - it works if installed with pacman..
     waybar
     mako
     swayimg
