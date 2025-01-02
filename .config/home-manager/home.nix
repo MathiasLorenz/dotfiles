@@ -45,6 +45,10 @@
     tldr
     stow
     kdePackages.plasma-wayland-protocols # needed to launch KDE plasma with Wayland
+    unzip
+    nodejs_23
+
+    slack
 
     gcc
     lua
@@ -114,6 +118,10 @@
     # '';
   # };
 
+  nixpkgs.config.allowUnfreePredicate = pkg:
+    builtins.elem (pkgs.lib.getName pkg) [
+      "slack"
+    ];
   # Home Manager can also manage your environment variables through
   # 'home.sessionVariables'. These will be explicitly sourced when using a
   # shell provided by Home Manager. If you don't want to manage your shell
