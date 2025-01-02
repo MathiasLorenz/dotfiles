@@ -47,6 +47,7 @@
     kdePackages.plasma-wayland-protocols # needed to launch KDE plasma with Wayland
     unzip
     nodejs_23
+    magic-wormhole
 
     slack
     _1password-gui
@@ -79,9 +80,10 @@
     # The sway 'downstream' dependencies can still be installed with home-manager
     swaybg
     swayidle
-    swaylock
+    # swaylock # Even when using the correct password I can't unluck with this - it works if installed with pacman...
     waybar
     mako
+    swayimg
 
     gh
     hub
