@@ -57,9 +57,9 @@ input "1189:32774:BenQ_ZOWIE_BenQ_ZOWIE_Gaming_Mouse" {
 # scale is supported but is discouraged, see https://github.com/swaywm/sway/wiki#hidpi and fractional scaling
 # workstation screen
 output DP-2 {
-    mode 3840x2160@143.998Hz
-    scale 1.25
-  }
+  mode 3840x2160@143.998Hz
+  scale 1.25
+}
 
 # frame.work laptop screen
 output eDP-1 {
