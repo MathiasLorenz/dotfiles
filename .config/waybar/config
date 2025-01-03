@@ -16,6 +16,7 @@
     "pulseaudio",
     "clock",
     "network",
+    "backlight",
     "battery#bat0",
     "idle_inhibitor",
     // "custom/kernel",
