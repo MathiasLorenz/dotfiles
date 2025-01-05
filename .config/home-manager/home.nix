@@ -48,8 +48,10 @@
     unzip
     nodejs_23
     magic-wormhole
-    pavucontrol # pulse audio volume control
     brightnessctl # Backlight control
+    pavucontrol # pulse audio volume control
+
+    blueman
 
     slack
     _1password-gui
