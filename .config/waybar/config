@@ -11,8 +11,8 @@
   ],
   "modules-center": ["sway/window"],
   "modules-right": [
-    "cpu",
-    "memory",
+    // "cpu",
+    // "memory",
     "sway/language",
     "pulseaudio",
     "clock",
@@ -43,7 +43,8 @@
 	  "format": "{used:0.1f}G/{total:0.1f}G "
   },
   "sway/language": {
-    "format": "{short}",
+    "format": "{shortDescription} {flag}",
+    "tooltop": "false"
   },
   "tray": {
     // "icon-size": 21,
