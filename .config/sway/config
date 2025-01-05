@@ -68,7 +68,7 @@ output eDP-1 {
   mode 2880x1920@120Hz
   scale 1.5
   # the y-position is just approximate for now
-  position 3840,750
+  # position 3840,750
 }
 # External LG screen at the office
 output "LG Electronics LG HDR 4K 406NTDV77218" {
