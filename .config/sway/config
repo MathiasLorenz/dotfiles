@@ -227,6 +227,11 @@ output "LG Electronics LG HDR 4K 406NTDV77218" {
 bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
 
+# Screenshot / screen capture
+# Needs grim and slurp installed on system
+# Capture specified screen area to to clipboard
+bindsym $mod+p exec grim -g "$(slurp)" - | wl-copy
+
 # Resizing containers:
 #
 mode "resize" {
