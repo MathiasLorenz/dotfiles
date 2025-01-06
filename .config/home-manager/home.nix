@@ -51,6 +51,8 @@
     brightnessctl # Backlight control
     pavucontrol # pulse audio volume control
 
+    asdf-vm
+
     blueman
 
     slack
