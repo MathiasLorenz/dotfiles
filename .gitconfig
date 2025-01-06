@@ -7,5 +7,5 @@
   path = ~/.gitconfig-personal
 [includeIf "gitdir:~/dotfiles/"]
   path = ~/.gitconfig-personal
-[includeIf "gitdir:~/Repos/green-ai/"]
-  path = ~/.gitconfig-green-ai
+[includeIf "gitdir:~/Repos/reel/"]
+  path = ~/.gitconfig-reel
