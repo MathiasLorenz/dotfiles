@@ -57,7 +57,7 @@
     _1password-gui
 
     gcc
-    lua
+    lua5_1
     luarocks
     uv
     rustup
