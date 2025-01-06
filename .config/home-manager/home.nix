@@ -51,6 +51,9 @@
     brightnessctl # Backlight control
     pavucontrol # pulse audio volume control
 
+    grim # screenshots
+    slurp # select region in wayland, used together with screenshots
+
     asdf-vm
 
     blueman
