@@ -50,6 +50,7 @@
     magic-wormhole
     brightnessctl # Backlight control
     pavucontrol # pulse audio volume control
+    flyctl
 
     grim # screenshots
     slurp # select region in wayland, used together with screenshots
