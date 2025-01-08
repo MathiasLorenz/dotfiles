@@ -84,6 +84,7 @@
     # Should be fixable... For now sway can be installed with pacman/paru
     # nixGL https://github.com/nix-community/nixGL should definitly be able to solve the issue
     # but I cannot get it to work....
+    # See 'GPU on non-NixOS systems' here https://nix-community.github.io/home-manager/
     # This should be the same for all gpu powered programs (like ghostty I suppose)
     # sway
     # ghostty
