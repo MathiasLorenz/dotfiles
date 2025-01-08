@@ -51,6 +51,7 @@
     brightnessctl # Backlight control
     pavucontrol # pulse audio volume control
     flyctl
+    tenv
 
     grim # screenshots
     slurp # select region in wayland, used together with screenshots
