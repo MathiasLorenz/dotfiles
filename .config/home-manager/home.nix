@@ -52,6 +52,8 @@
     pavucontrol # pulse audio volume control
     flyctl
     tenv
+    traceroute
+    dig
 
     grim # screenshots
     slurp # select region in wayland, used together with screenshots
