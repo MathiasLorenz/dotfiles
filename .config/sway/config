@@ -60,7 +60,7 @@ input "1189:32774:BenQ_ZOWIE_BenQ_ZOWIE_Gaming_Mouse" {
 # workstation screen
 output DP-2 {
   mode 3840x2160@143.998Hz
-  scale 1.25
+  scale 1
 }
 
 # frame.work laptop screen
