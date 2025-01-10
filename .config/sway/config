@@ -36,7 +36,7 @@ font pango:Hack Nerd Font 13
 #
 ### Keyboard
 input "type:keyboard" {
-    repeat_delay 300
+    repeat_delay 250
     repeat_rate 35
     xkb_layout us,dk
     xkb_options grp:alt_shift_toggle
