@@ -56,8 +56,8 @@ input "1189:32774:BenQ_ZOWIE_BenQ_ZOWIE_Gaming_Mouse" {
 # output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_3840x2160.png fill
 #
 # This works for my workstation at home, will probably have to fix this when using a laptop as well..
-# scale is supported but is discouraged, see https://github.com/swaywm/sway/wiki#hidpi and fractional scaling
-# workstation screen
+# scale is supported but is discouraged, see https://github.com/swaywm/sway/wiki#hidpi and 'fractional scaling workstation screen'
+# The size of the screen and the distance does require a bit of scaling currently :(
 output DP-2 {
   mode 3840x2160@143.998Hz
   scale 1.15
@@ -66,10 +66,9 @@ output DP-2 {
 # frame.work laptop screen
 output eDP-1 {
   mode 2880x1920@120Hz
-  scale 1.4
-  # the y-position is just approximate for now
-  # position 3840,750
+  scale 1.3
 }
+
 # External LG screen at the office
 output "LG Electronics LG HDR 4K 406NTDV77218" {
   mode 3840x2160@60.000Hz
