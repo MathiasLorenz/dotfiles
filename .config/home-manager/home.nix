@@ -55,6 +55,7 @@
     traceroute
     dig
     nerd-fonts.hack
+    fwupd # The tool is fwupdmgr
 
     grim # screenshots
     slurp # select region in wayland, used together with screenshots
