@@ -70,6 +70,15 @@ chsh -s /usr/bin/zsh
 
 note that you must log out of your system for the change to take effect.
 
+### Sway
+
+Install sway and swaylock with paru
+
+```sh
+paru sway
+paru swaylock
+```
+
 ## Requirements
 
 You need `git` and `stow` installed
