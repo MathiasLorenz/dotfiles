@@ -26,7 +26,6 @@
     fish
     wl-clipboard
     wget
-    bitwarden-desktop
     bat
     # zsh # Managed with paru for now, makes it easier with shell integration
     nix-zsh-completions
@@ -67,8 +66,10 @@
     # Installed with pacman instead (as it comes bundled in EndeavourOS)
     # pavucontrol # pulse audio volume control
 
-    slack
-    _1password-gui
+    # Better to just install these with pacman...
+    # slack # slack-desktop-wayland in paru
+    # _1password-gui # 1password in paru
+    # bitwarden-desktop # bitwarden in paru
 
     gcc
     lua5_1
