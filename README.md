@@ -2,9 +2,13 @@
 
 Dotfiles, yay!
 
-## Nix
+## Installing
 
-Most packages are installed with nix and home-manager. The rest are usually installed with pacman/aur (paru is very nice for this and is installed with nix).
+To install/bootstrap system:
+
+### Packages
+
+Most packages are installed with nixpkgs and home-manager. The rest are usually installed with pacman/aur (paru is very nice for this and is installed with nix).
 
 To install nix:
 ```
@@ -21,14 +25,28 @@ nix-shell '<home-manager>' -A install
 
 For home-manager see https://nix-community.github.io/home-manager/
 
-Then things can be installed with
+Install stow and symlink dotfiles
+```
+sudo pacman -Syu stow
+cd dotfiles
+stow .
+```
+
+If there are any conflicts (i.e. `.config/home-manager/home.nix`) delete the existing ones s.t. the new ones will replace these.
+
+Now we can install home manager packages with
 
 ```
-nix-channel --update
+home-manager build
 home-manager switch
 ```
 
-There is also a go-task for the above.
+The above `build` is not necessary, but nice to do to ensure nothing is bonked before we apply the config with `switch`.
+
+
+### Terminal
+
+..
 
 ## Requirements
 
