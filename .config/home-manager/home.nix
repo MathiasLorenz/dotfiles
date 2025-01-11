@@ -28,6 +28,7 @@
     wget
     bitwarden-desktop
     bat
+    # zsh # Managed with paru for now, makes it easier with shell integration
     nix-zsh-completions
     curl
     fastfetch
