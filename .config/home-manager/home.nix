@@ -55,7 +55,7 @@
     traceroute
     dig
     nerd-fonts.hack
-    fwupd # The tool is fwupdmgr
+    # fwupd # The tool is fwupdmgr, installed with pacman instead, otherwise some gdbus things are bonked
 
     grim # screenshots
     slurp # select region in wayland, used together with screenshots
