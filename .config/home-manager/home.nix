@@ -54,6 +54,7 @@
     tenv
     traceroute
     dig
+    nerd-fonts.hack
 
     grim # screenshots
     slurp # select region in wayland, used together with screenshots
