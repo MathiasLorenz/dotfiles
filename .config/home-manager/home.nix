@@ -43,8 +43,8 @@
     gawk
     # zplug # This needs some more setup, probably easiest for now to download manually
     tldr
-    stow
-    kdePackages.plasma-wayland-protocols # needed to launch KDE plasma with Wayland
+    # stow # Installed with pacman as we need this to bootstrap nixkpgs
+    # kdePackages.plasma-wayland-protocols # needed to launch KDE plasma with Wayland, installed with pacman
     unzip
     nodejs_23
     magic-wormhole
