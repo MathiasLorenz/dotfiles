@@ -15,13 +15,13 @@
     // "memory",
     "sway/language",
     "pulseaudio",
-    "clock",
     "network",
     "backlight",
     "battery#bat0",
     "bluetooth",
-    "idle_inhibitor",
     // "custom/kernel",
+    "clock",
+    "idle_inhibitor",
     "tray"
   ],
   "custom/kernel": {
