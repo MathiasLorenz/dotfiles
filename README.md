@@ -11,22 +11,25 @@ To install/bootstrap system:
 Most packages are installed with nixpkgs and home-manager. The rest are usually installed with pacman/aur (paru is very nice for this and is installed with nix).
 
 To install nix:
-```
+
+```sh
 curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install
 ```
 
 To add nixpkgs unstable and install home-manager run
-```
+
+```sh
 nix-channel --add https://nixos.org/channels/nixpkgs-unstable nixpkgs-unstable
 nix-channel --add https://github.com/nix-community/home-manager/archive/master.tar.gz home-manager
 nix-channel --update
 nix-shell '<home-manager>' -A install
 ```
 
-For home-manager see https://nix-community.github.io/home-manager/
+For home-manager see <https://nix-community.github.io/home-manager/>
 
 Install stow and symlink dotfiles
-```
+
+```sh
 sudo pacman -Syu stow
 cd dotfiles
 stow .
@@ -36,13 +39,12 @@ If there are any conflicts (i.e. `.config/home-manager/home.nix`) delete the exi
 
 Now we can install home manager packages with
 
-```
+```sh
 home-manager build
 home-manager switch
 ```
 
 The above `build` is not necessary, but nice to do to ensure nothing is bonked before we apply the config with `switch`.
-
 
 ### Terminal
 
@@ -64,11 +66,10 @@ cd dotfiles
 Then use GNU `stow` to create symlinks
 
 ```sh
-$ stow .
+stow .
 ```
 
 and voila, the config has been applied!
-
 
 ## Credits
 
