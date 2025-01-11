@@ -49,7 +49,6 @@
     nodejs_23
     magic-wormhole
     brightnessctl # Backlight control
-    pavucontrol # pulse audio volume control
     flyctl
     tenv
     traceroute
@@ -62,6 +61,9 @@
 
     blueman
 
+    # Installed with pacman instead (as it comes bundled in EndeavourOS)
+    # pavucontrol # pulse audio volume control
+
     slack
     _1password-gui
 
@@ -71,7 +73,9 @@
     uv
     rustup
  
-    git # pacman still has git installed for pacman itself I am quite sure
+    # Already bundled with pacman
+    # git
+
     paru
 
     # This does not work currently :(
