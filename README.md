@@ -48,7 +48,27 @@ The above `build` is not necessary, but nice to do to ensure nothing is bonked b
 
 ### Terminal
 
-..
+Install `zplug`, see
+
+```sh
+curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
+```
+
+Install `zsh` with paru like `paru zsh` and confirm it runs with
+
+```sh
+zsh
+```
+
+and accept installation of packages with zplug.
+
+Changing default shell to be `zsh` is done with
+
+```sh
+chsh -s /usr/bin/zsh
+```
+
+note that you must log out of your system for the change to take effect.
 
 ## Requirements
 
