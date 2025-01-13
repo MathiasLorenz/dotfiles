@@ -3,9 +3,9 @@
 [pull]
   rebase = true
 
-[includeIf "gitdir:~/Repos/personal/"]
+[includeIf "gitdir:~/repos/personal/"]
   path = ~/.gitconfig-personal
 [includeIf "gitdir:~/dotfiles/"]
   path = ~/.gitconfig-personal
-[includeIf "gitdir:~/Repos/reel/"]
+[includeIf "gitdir:~/repos/reel/"]
   path = ~/.gitconfig-reel
