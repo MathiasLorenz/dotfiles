@@ -4,7 +4,7 @@ return {
     opts = {
       servers = {
         ruff = {
-          mason = false,
+          mason = true,
         },
       },
     },
