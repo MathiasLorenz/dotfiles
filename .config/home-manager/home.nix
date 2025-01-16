@@ -55,6 +55,9 @@
     dig
     nerd-fonts.hack
     # fwupd # The tool is fwupdmgr, installed with pacman instead, otherwise some gdbus things are bonked
+    yazi
+    jq
+    yq-go
 
     grim # screenshots
     slurp # select region in wayland, used together with screenshots
