@@ -59,7 +59,13 @@
     grim # screenshots
     slurp # select region in wayland, used together with screenshots
 
-    asdf-vm
+    # What a terrible thing to be able to install erlang/elixir.. None is currently working
+    # asdf-vm
+    # ncurses5
+    # autoconf
+    # automake
+    # erlang_25
+    # elixir_1_18
 
     blueman
 
