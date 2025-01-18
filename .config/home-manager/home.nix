@@ -83,8 +83,6 @@
 
     blueman
 
-    (config.lib.nixGL.wrapOffload pkgs.qutebrowser)
-
     # Installed with pacman instead (as it comes bundled in EndeavourOS)
     # pavucontrol # pulse audio volume control
 
@@ -149,6 +147,17 @@
     #   echo "Hello, ${config.home.username}!"
     # '')
   ];
+
+  programs.qutebrowser = {
+    enable = true;
+    package = config.lib.nixGL.wrap pkgs.mpv;
+
+    # extraConfig = "..qutebrowser/config.py";
+  };
+  xdg.configFile.qutebrowser = {
+    source = ../qutebrowser;
+    recursive = true;
+  };
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
