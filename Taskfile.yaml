@@ -5,7 +5,7 @@ tasks:
   # EndevourOS has this built in and does this occasionally when running 'paru'
   rank-mirrors:
     cmds:
-      - curl -s "https://archlinux.org/mirrorlist/?country=FR&country=GB&protocol=https&use_mirror_status=on" | sed -e 's/^#Server/Server/' -e '/^#/d' | rankmirrors -n 5 -
+      - curl -s "https://archlinux.org/mirrorlist/?country=DK&country=SE&country=NO&country=DE&protocol=https&use_mirror_status=on" | sed -e 's/^#Server/Server/' -e '/^#/d' | rankmirrors -n 5 -
 
   nix-hm-update:
     cmds:
