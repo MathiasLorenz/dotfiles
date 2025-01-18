@@ -57,14 +57,21 @@
     '';
 
     shellAbbrs = {
+      # Git
       g = "git";
+      gst = "git status";
+      gd = "git diff";
+      gds = "git diff --staged";
+      gc = "git commit";
+      gp = "git push";
+      gpfwl = "git push --force-with-lease";
+
       ls = "eza --icons";
       l = "eza --icons --git -alh";
       t = "task";
       k = "kubectl";
       knr = "kubectl describe nodes |grep '^  Resource' -A3";
       n = "nvim";
-      gst = "git status";
       lg = "lazygit";
       ncdu = "ncdu --color dark -rr";
       ping = "prettyping --nolegend";
