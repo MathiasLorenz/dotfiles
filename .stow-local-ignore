@@ -24,6 +24,7 @@ _darcs
 
 # Config files to let nix/home-manager sync
 \.config/qutebrowser
+\.config/ghostty
 
 # Files which should just not be symlinked
 Taskfile.yaml
