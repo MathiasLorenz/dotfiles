@@ -3,6 +3,10 @@
 { pkgs, ... }:
 
 {
+  imports = [
+    modules/fish.nix
+  ];
+
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
   home.username = "mlorenz";
@@ -22,8 +26,6 @@
   home.packages = with pkgs; [
     btop
     zathura
-    zoxide
-    fish
     wl-clipboard
     wget
     bat
@@ -36,12 +38,9 @@
     vim
     neovim
     wl-clipboard
-    fzf
     ripgrep
     go-task
-    starship
     gawk
-    # zplug # This needs some more setup, probably easiest for now to download manually
     tldr
     # stow # Installed with pacman as we need this to bootstrap nixkpgs
     # kdePackages.plasma-wayland-protocols # needed to launch KDE plasma with Wayland, installed with pacman
@@ -55,9 +54,11 @@
     dig
     nerd-fonts.hack
     # fwupd # The tool is fwupdmgr, installed with pacman instead, otherwise some gdbus things are bonked
-    yazi
     jq
     yq-go
+    eza
+    nitch
+    grc
 
     grim # screenshots
     slurp # select region in wayland, used together with screenshots
