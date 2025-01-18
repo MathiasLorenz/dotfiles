@@ -1,8 +1,15 @@
 # https://nix-community.github.io/home-manager/
 
-{ pkgs, ... }:
+# Channels used:
+# nix-channel --add https://github.com/nix-community/home-manager/archive/master.tar.gz home-manager
+# nix-channel --add https://nixos.org/channels/nixpkgs-unstable nixpkgs-unstable
+# nix-channel --add https://github.com/nix-community/nixGL/archive/main.tar.gz nixgl
+
+{ config, pkgs, ... }:
 
 {
+  nixGL.packages = import <nixgl> { inherit pkgs; };
+
   imports = [
     modules/fish.nix
   ];
@@ -75,6 +82,8 @@
     # elixir_1_18
 
     blueman
+
+    (config.lib.nixGL.wrapOffload pkgs.qutebrowser)
 
     # Installed with pacman instead (as it comes bundled in EndeavourOS)
     # pavucontrol # pulse audio volume control
