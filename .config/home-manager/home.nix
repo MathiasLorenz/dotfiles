@@ -62,6 +62,9 @@
     grim # screenshots
     slurp # select region in wayland, used together with screenshots
 
+    # Login manager
+    # ly # needs systemd stuff, installed with pacman instead
+
     # What a terrible thing to be able to install erlang/elixir.. None is currently working
     # asdf-vm
     # ncurses5
