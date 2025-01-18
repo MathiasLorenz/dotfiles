@@ -151,8 +151,6 @@
   programs.qutebrowser = {
     enable = true;
     package = config.lib.nixGL.wrap pkgs.qutebrowser;
-
-    # extraConfig = "..qutebrowser/config.py";
   };
   xdg.configFile.qutebrowser = {
     source = ../qutebrowser;
@@ -162,8 +160,6 @@
   programs.ghostty = {
     enable = true;
     package = config.lib.nixGL.wrap pkgs.ghostty;
-
-    # enableFishIntegration = true;
   };
   xdg.configFile.ghostty = {
     source = ../ghostty;
