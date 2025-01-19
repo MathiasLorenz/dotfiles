@@ -77,6 +77,8 @@
     #   systemctl enable ly
     # and restart system (or stop/start the two services)
     # ly # needs systemd stuff, installed with pacman instead
+    # NOTE: This actually breaks log in to xfce.... You can of course revert the above
+    # to remedy this
 
     # What a terrible thing to be able to install erlang/elixir.. None is currently working
     # asdf-vm
