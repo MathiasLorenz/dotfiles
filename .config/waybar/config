@@ -16,6 +16,7 @@
     // "cpu",
     // "memory",
     "sway/language",
+    // "keyboard-state",
     "pulseaudio",
     "network",
     "backlight",
@@ -36,6 +37,15 @@
       "deactivated": "󰛊"
     }
   },
+  // Does not work for now - the icon is always stuck at 'unlocked'
+  "keyboard-state": {
+    "capslock": true,
+    "format": "{name} {icon}",
+    "format-icons": {
+      "locked": "",
+      "unlocked": ""
+    }
+  },
   "cpu": {
     "interval": 1,
     "format": "{icon0}{icon1}{icon2}{icon3} {usage:>2}% ",
@@ -48,7 +58,7 @@
       "▆",
       "▇",
       "█"
-    ],
+    ]
   },
   "memory": {
     "interval": 30,
