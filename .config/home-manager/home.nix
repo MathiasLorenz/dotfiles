@@ -65,6 +65,7 @@
     eza
     nitch
     grc
+    yazi
 
     grim # screenshots
     slurp # select region in wayland, used together with screenshots
