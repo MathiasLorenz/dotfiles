@@ -84,6 +84,8 @@
       ncdu = "ncdu --color dark -rr";
       ping = "prettyping --nolegend";
       hm = "home-manager";
+      ff = "fastfetch";
+
       # cat = "bat";
       # docker
       docker_status = "echo -e \"\nContainers:\n\" && docker ps -a && echo -e \"\nImages:\n\" && docker image ls && echo -e \"\nVolumes:\n\" && docker volume ls";
