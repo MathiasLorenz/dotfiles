@@ -61,6 +61,10 @@
       set -x BROWSER "qutebrowser"
       set -x PAGER "less"
 
+      # Add roc-lang to path - this must be updated on new nightly releases (when downloaded)
+      # Is not yet working, maybe just use home-manager sessionVariables...
+      # fish_add_path ~/roc_nightly-linux_x86_64-2025-01-07-a089cf2
+
       nitch
     '';
 
