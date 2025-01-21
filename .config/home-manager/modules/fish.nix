@@ -53,6 +53,14 @@
       	rm -f -- "$tmp"
       end
 
+      # set default applications
+      set -x EDITOR "nvim"
+      set -x VISUAL "nvim"
+      set -x READER "zathura"
+      set -x TERMINAL "ghostty"
+      set -x BROWSER "qutebrowser"
+      set -x PAGER "less"
+
       nitch
     '';
 
