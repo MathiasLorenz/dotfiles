@@ -97,6 +97,7 @@
     # slack # slack-desktop-wayland in paru
     # _1password-gui # 1password in paru
     # bitwarden-desktop # bitwarden in paru
+    # _1password-cli
 
     gcc
     lua5_1
@@ -196,6 +197,7 @@
     builtins.elem (pkgs.lib.getName pkg) [
       "slack"
       "1password"
+      "1password-cli"
     ];
   # Home Manager can also manage your environment variables through
   # 'home.sessionVariables'. These will be explicitly sourced when using a
