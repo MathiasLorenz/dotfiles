@@ -11,14 +11,18 @@ config.load_autoconfig()
 # Many things stolen/yanked from Vakili GitHub
 # https://github.com/vakili/nix-config/blob/main/qutebrowser/config.py
 
-### Darkmode
-##### https://old.reddit.com/r/qutebrowser/comments/jdnqbp/yet_another_dark_mode_post/
+# Darkmode
+# https://old.reddit.com/r/qutebrowser/comments/jdnqbp/yet_another_dark_mode_post/
 c.colors.webpage.darkmode.enabled = True
 # dark/night mode
 c.colors.webpage.darkmode.policy.images = "smart"
 c.colors.webpage.bg = "black"
 
 c.tabs.position = "left"
+c.tabs.select_on_remove = "last-used"
+# Enable toggle of showing/removing tabs
+config.bind("tt", "config-cycle tabs.show always never")
+
 c.completion.shrink = True
 
 # Re-open previous tabs for new window
