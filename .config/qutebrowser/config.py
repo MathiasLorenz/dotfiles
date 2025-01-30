@@ -20,8 +20,16 @@ c.colors.webpage.bg = "black"
 
 c.tabs.position = "left"
 c.tabs.select_on_remove = "last-used"
+c.tabs.show_switching_delay = 2500
+
 # Enable toggle of showing/removing tabs
 config.bind("tt", "config-cycle tabs.show always never")
+
+# Bind different options for showing tabs
+config.bind("tsa", "set tabs.show always")
+config.bind("tsn", "set tabs.show never")
+config.bind("tsm", "set tabs.show multiple")
+config.bind("tss", "set tabs.show switching")
 
 c.completion.shrink = True
 
