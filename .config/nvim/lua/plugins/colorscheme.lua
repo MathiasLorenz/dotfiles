@@ -1,5 +1,6 @@
 return {
-  { "ellisonleao/gruvbox.nvim" },
+  -- { "ellisonleao/gruvbox.nvim" },
+  { "folke/tokyonight.nvim" },
   -- { "slugbyte/lackluster.nvim" },
   --  See https://github.com/zenbones-theme/zenbones.nvim?tab=readme-ov-file for colorschemes for zenbones
   -- { "zenbones-theme/zenbones.nvim", dependencies = "rktjmp/lush.nvim" },
@@ -8,7 +9,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "gruvbox",
+      colorscheme = "tokyonight-storm",
     },
   },
 }
