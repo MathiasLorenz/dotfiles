@@ -104,6 +104,7 @@
     luarocks
     uv
     rustup
+    zig
  
     # Already bundled with pacman
     # git
