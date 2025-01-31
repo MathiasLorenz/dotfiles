@@ -6,7 +6,7 @@ return {
       servers = {
         ruff = {
           mason = true,
-          autostart = false,
+          autostart = true,
         },
         jedi_language_server = {
           mason = true,
@@ -14,6 +14,7 @@ return {
         },
         pylsp = {
           mason = true,
+          autostart = true,
           settings = {
             -- see https://github.com/python-lsp/python-lsp-server/blob/develop/CONFIGURATION.md
             pylsp = {
