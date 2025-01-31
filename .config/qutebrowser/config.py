@@ -23,7 +23,7 @@ c.tabs.select_on_remove = "last-used"
 c.tabs.show_switching_delay = 2500
 
 # Enable toggle of showing/removing tabs
-config.bind("tt", "config-cycle tabs.show always never")
+config.bind("tt", "config-cycle tabs.show always switching")
 
 # Bind different options for showing tabs
 config.bind("tsa", "set tabs.show always")
