@@ -39,7 +39,7 @@ c.auto_save.session = True
 # c.fonts.default_family = "Hack nerd font"
 
 # Zoom zoom
-c.qt.highdpi = True  # Not sure this does anything
+c.qt.highdpi = True
 c.zoom.default = 120
 
 c.qt.args = ["enable-features=VaapiVideoDecodeLinuxGL"]
