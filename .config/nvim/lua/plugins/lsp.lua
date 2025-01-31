@@ -1,3 +1,4 @@
+-- See `:help lspconfig-setup`, really helpful!
 return {
   {
     "neovim/nvim-lspconfig",
@@ -13,6 +14,15 @@ return {
         },
         pylsp = {
           mason = true,
+          settings = {
+            pylsp = {
+              plugins = {
+                pycodestyle = {
+                  maxLineLength = 120, -- Not the best to set globally but ok for now
+                },
+              },
+            },
+          },
         },
       },
     },
