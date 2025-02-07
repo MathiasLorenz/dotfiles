@@ -3,3 +3,6 @@
 
 # result package from home-manager
 /result
+
+# Config log for btop
+.config/btop/btop.log
