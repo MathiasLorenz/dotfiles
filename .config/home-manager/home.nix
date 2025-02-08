@@ -67,6 +67,14 @@
     grc
     yazi
 
+    # rocm-cli for AMD gpus, see https://cgmb-rocm-docs.readthedocs.io/en/latest/ROCm_System_Managment/ROCm-SMI-CLI.html
+    amdgpu_top
+    patchelf
+    # rocmPackages.rocm-smi
+    # Installed with paru instead as 'llama.cpp-hip(-git)' which comes with all the extras for GPU support
+    # The llama-cpp package is with CPU support only, so I'll build it from scratch instead
+    # llama-cpp
+
     grim # screenshots
     slurp # select region in wayland, used together with screenshots
 
