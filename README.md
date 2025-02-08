@@ -113,4 +113,13 @@ HIPCXX=/opt/rocm/llvm/bin/clang HIP_PATH=(/opt/rocm/bin/hipconfig -R) \
       cmake -S . -B build -DGGML_HIP=ON -DAMDGPU_TARGETS=gfx1100 -DCMAKE_BUILD_TYPE=Release \
             -DCMAKE_EXE_LINKER_FLAGS="-Wl,-rpath,/usr/local/lib:/opt/rocm/lib:/usr/lib" \
       && cmake --build build --config Release -- -j 16
+
+# What has worked on desktop
+# At build time it looks to pick up /usr/lib/libopenblas but it works with the linking to the nix one...
+# In order to locate version of openblas/gfortran the easiest is to:
+# cd /nix/store/
+# fd 'libopblas.so' and fd 'gfortran.so' to find the paths
+cmake -B build -DGGML_BLAS=ON -DGGML_BLAS_VENDOR=OpenBLAS \
+      -DCMAKE_EXE_LINKER_FLAGS="-Wl,--disable-new-dtags,-rpath,/nix/store/6h1dqhbn02zsfsdi8q64bbccsahsid0y-openblas-0.3.28/lib:/nix/store/mzphlx52ym8j9z12inm716cdz5jazrzy-gfortran-14-20241116-lib/lib"
+  cmake --build build --config Release -- -j$(nproc)
 ```
