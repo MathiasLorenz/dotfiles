@@ -103,3 +103,14 @@ and voila, the config has been applied!
 ## Credits
 
 [Youtube Guide](https://www.youtube.com/watch?v=y6XCebnB9gs)
+
+## Installing llama.cpp with AMD GPU support
+
+Currently not working properly
+
+```fish
+HIPCXX=/opt/rocm/llvm/bin/clang HIP_PATH=(/opt/rocm/bin/hipconfig -R) \
+      cmake -S . -B build -DGGML_HIP=ON -DAMDGPU_TARGETS=gfx1100 -DCMAKE_BUILD_TYPE=Release \
+            -DCMAKE_EXE_LINKER_FLAGS="-Wl,-rpath,/usr/local/lib:/opt/rocm/lib:/usr/lib" \
+      && cmake --build build --config Release -- -j 16
+```
