@@ -30,7 +30,7 @@ return {
                 -- linter options
                 pylint = {
                   enabled = true,
-                  args = { "--max-line-length=120" },
+                  args = { "--max-line-length=120", "--max-args=8", "--max-positional-arguments=8" },
                 },
                 pyflakes = { enabled = false },
                 -- type checker
