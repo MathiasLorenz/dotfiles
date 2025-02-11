@@ -28,7 +28,7 @@ return {
                 autopep8 = { enabled = false },
                 yapf = { enabled = false },
                 -- linter options
-                pylint = { enabled = false },
+                pylint = { enabled = true },
                 pyflakes = { enabled = false },
                 -- type checker
                 pylsp_mypy = { enabled = true },
