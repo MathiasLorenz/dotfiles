@@ -28,7 +28,10 @@ return {
                 autopep8 = { enabled = false },
                 yapf = { enabled = false },
                 -- linter options
-                pylint = { enabled = true },
+                pylint = {
+                  enabled = true,
+                  args = { "--max-line-length=120" },
+                },
                 pyflakes = { enabled = false },
                 -- type checker
                 pylsp_mypy = { enabled = true },
