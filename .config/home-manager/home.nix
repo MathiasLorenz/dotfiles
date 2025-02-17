@@ -98,13 +98,8 @@
     # NOTE: This actually breaks log in to xfce.... You can of course revert the above
     # to remedy this
 
-    # What a terrible thing to be able to install erlang/elixir.. None is currently working
-    # asdf-vm
-    # ncurses5
-    # autoconf
-    # automake
-    # erlang_25
-    # elixir_1_18
+    # Using asdf-vm turned out to be a shit show, this worked surprisingly well
+    beamMinimal25Packages.elixir_1_17
 
     blueman
 
