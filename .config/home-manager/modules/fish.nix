@@ -65,6 +65,10 @@
       # Is not yet working, maybe just use home-manager sessionVariables...
       # fish_add_path ~/roc_nightly-linux_x86_64-2025-01-07-a089cf2
 
+      # setup ssh-agent and add keys, supress output
+      set -x SSH_AUTH_SOCK "$XDG_RUNTIME_DIR/ssh-agent.socket"
+      ssh-add &> /dev/null
+
       nitch
     '';
 
