@@ -10,6 +10,9 @@ return {
           explorer = { hidden = true, ignored = true },
         },
       },
+      words = {
+        debounce = 100,
+      },
     },
   },
 }
