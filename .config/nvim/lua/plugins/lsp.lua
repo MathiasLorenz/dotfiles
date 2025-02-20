@@ -4,6 +4,16 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
+        --- Elixir
+        lexical = {
+          mason = true,
+          autostart = true,
+        },
+        elixirls = {
+          mason = true,
+          autostart = false,
+        },
+        --- Python
         ruff = {
           mason = true,
           autostart = true,
