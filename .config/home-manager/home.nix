@@ -100,6 +100,7 @@
 
     # Using asdf-vm turned out to be a shit show, this worked surprisingly well
     beamMinimal25Packages.elixir_1_17
+    wkhtmltopdf
 
     blueman
 
