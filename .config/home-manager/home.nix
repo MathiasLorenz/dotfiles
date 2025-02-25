@@ -109,9 +109,9 @@
 
     # Better to just install these with pacman...
     # slack # slack-desktop-wayland in paru
-    _1password-gui # 1password in paru
+    # _1password-gui # 1password in paru
     # bitwarden-desktop # bitwarden in paru
-    _1password-cli
+    # _1password-cli
 
     gcc
     lua5_1
