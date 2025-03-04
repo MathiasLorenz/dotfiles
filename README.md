@@ -1,3 +1,5 @@
+As I use nixos now this repo is basically unused.
+
 # Description
 
 Dotfiles, yay!
